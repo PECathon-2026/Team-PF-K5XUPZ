@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-fixed":"#3b0710","on-primary":"#412d00","on-primary-fixed-variant":"#5e4200","tertiary-fixed":"#ffdadb","on-secondary-container":"#ff9f93","on-tertiary":"#571c23","tertiary":"#ffbcbf","on-tertiary-fixed-variant":"#733239","outline":"#9c8f7c","on-surface-variant":"#d3c5b0","on-tertiary-container":"#702f36","outline-variant":"#4f4536","on-surface":"#e5e1e4","surface":"#131315","surface-container":"#201f21","secondary":"#ffb4aa","secondary-fixed-dim":"#ffb4aa","surface-tint":"#f5be4f","primary-fixed":"#ffdea6","error-container":"#93000a","tertiary-fixed-dim":"#ffb2b7","on-error-container":"#ffdad6","on-background":"#e5e1e4","on-secondary-fixed-variant":"#8d1512","surface-bright":"#39393b","surface-dim":"#131315","inverse-on-surface":"#313032","on-secondary-fixed":"#410001","surface-container-highest":"#353437","inverse-primary":"#7c5800","on-secondary":"#690004","on-primary-fixed":"#271900","inverse-surface":"#e5e1e4","primary-fixed-dim":"#f5be4f","surface-container-low":"#1c1b1d","error":"#ffb4ab","secondary-container":"#901714","on-primary-container":"#5a3f00","on-error":"#690005","primary-container":"#dea93c","surface-container-high":"#2a2a2c","primary":"#fcc455","background":"#131315","surface-container-lowest":"#0e0e10","secondary-fixed":"#ffdad5","surface-variant":"#353437","tertiary-container":"#f2999f"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{margin:"2rem","space-sm":"0.5rem","space-xs":"0.25rem","space-md":"1rem",gutter:"1.25rem","space-lg":"1.5rem","space-xl":"2.5rem","gutter-sm":"0.75rem","margin-mobile":"1rem"},fontFamily:{"badge-mono":["JetBrains Mono"],"body-md":["Geist"],"headline-md":["Space Grotesk"],"headline-lg":["Space Grotesk"],"display-xl":["Space Grotesk"],"body-lg":["Geist"],"body-sm":["Geist"],"label-mono":["JetBrains Mono"],"headline-lg-mobile":["Space Grotesk"],"title-lg":["Geist"]},fontSize:{"badge-mono":["10px",{lineHeight:"12px",letterSpacing:"0.08em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"600"}],"display-xl":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"label-mono":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"500"}],"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"600"}],"title-lg":["18px",{lineHeight:"26px",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface min-h-screen selection:bg-primary-container selection:text-on-primary-container relative"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_12px_32px_-4px_rgba(0,0,0,0.8)]"><div class="h-16 w-full px-margin flex items-center justify-between"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="product" href="#"><img alt="PrivacyLens Shield Logo" class="h-8 w-auto object-contain" src="C:\Users\Shaarvi\OneDrive"/><span class="font-title-lg text-title-lg tracking-tight text-on-surface">PrivacyLens</span></a><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-high/60 shadow-[0_0_12px_rgba(222,169,60,0.1)]"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span><span class="font-badge-mono text-badge-mono text-primary uppercase">Proxy: Active &amp; Guarded</span></div></div><nav class="hidden md:flex items-center gap-space-md" data-active-classes="bg-surface-container-high text-primary font-bold"><a aria-current="page" class="px-space-sm py-1 rounded transition-all bg-surface-container-high text-primary font-bold" data-path="product" href="#">Product</a><a class="px-space-sm py-1 rounded font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="live-demo" href="#">Live Demo</a><a class="px-space-sm py-1 rounded font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="architecture" href="#">Architecture</a><a class="px-space-sm py-1 rounded font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="dashboard-protected" href="#">Dashboard (Protected)</a><a class="px-space-sm py-1 rounded font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="docs" href="#">Docs</a></nav><div class="flex items-center gap-space-md"><button class="inline-flex items-center justify-center px-space-md py-space-xs rounded bg-primary-container text-on-primary-container font-body-md text-body-md font-semibold shadow-[0_0_16px_rgba(222,169,60,0.25)] hover:bg-primary transition-all" type="button">Launch Extension</button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-inner"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background relative z-10"><div class="flex flex-col w-full selection:bg-primary selection:text-on-primary">
+<!-- ================= HERO SECTION ================= -->
+<section class="relative w-full overflow-hidden px-margin py-space-xl">
+<!-- Atmospheric Ambient Glows (Contained) -->
+<div class="absolute -top-32 left-1/4 w-96 h-96 rounded-full bg-primary/10 blur-[120px] pointer-events-none"></div>
+<div class="absolute top-1/3 -left-20 w-80 h-80 rounded-full bg-secondary-container/20 blur-[130px] pointer-events-none"></div>
+<div class="absolute bottom-10 right-10 w-[500px] h-[500px] rounded-full bg-primary-container/10 blur-[150px] pointer-events-none"></div>
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl relative z-10">
+<!-- Top Dynamic Badge Strip -->
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="inline-flex items-center gap-space-sm px-space-md py-1 rounded bg-surface-container-high shadow-lg">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-badge-mono text-badge-mono uppercase text-primary tracking-widest">Protocol v4.12 // Sovereign Telemetry</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-xs font-label-mono text-label-mono text-on-surface-variant">
+<span>Target Architecture:</span>
+<span class="text-on-surface">Client-Side WASM Enclave</span>
+</div>
+</div>
+<!-- Main Headline Typography & Editorial Paradox -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end">
+<div class="lg:col-span-8 space-y-space-md">
+<div class="inline-block px-space-sm py-0.5 rounded bg-primary-container/20 text-primary font-badge-mono text-badge-mono uppercase tracking-wider mb-space-xs">
+            Zero Cloud Reliance · Absolute Determinism
+          </div>
+<h1 class="font-display-xl text-display-xl tracking-tight text-on-surface uppercase">
+            Compute Locally. <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-fixed to-primary-container">
+              Reason Globally.
+            </span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            The generative explosion opened an existential paradox: instant synthesis at the expense of irreversible corporate data exfiltration. PrivacyLens interposes a deterministic zero-knowledge cryptographic veil before token sockets touch hyperscalers.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-md bg-surface-container-low p-space-lg rounded shadow-2xl">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Runtime Posture</span>
+<span class="font-badge-mono text-badge-mono text-primary px-space-xs py-0.5 rounded bg-primary/10">STRICT-AIRGAP</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-xl text-headline-lg text-on-surface font-bold" id="hero-deflect-counter">34,291</span>
+<span class="font-label-mono text-label-mono text-primary font-semibold">Exfiltrations Deflected</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Outbound payloads dynamically scrubbed via 4-pass client-side heuristics in sub-millisecond execution loops.
+          </p>
+<div class="w-full bg-surface-container-highest h-1 rounded overflow-hidden">
+<div class="bg-gradient-to-r from-primary to-primary-container h-full w-[88%] animate-pulse"></div>
+</div>
+</div>
+</div>
+<!-- Hero Visualizer: Split Interactive Cyber Vector Deflection Arena -->
+<div class="relative w-full rounded-xl bg-surface-container-lowest p-space-md shadow-2xl overflow-hidden min-h-[420px] flex flex-col justify-between">
+<!-- Subtle Grid Matrix Underlay -->
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none opacity-40"></div>
+<!-- Visualizer Header Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-md relative z-10">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary-container">shield_with_heart</span>
+<span class="font-title-lg text-title-lg text-on-surface font-semibold tracking-tight">Active Infiltration Deflector</span>
+</div>
+<div class="flex items-center gap-space-md font-badge-mono text-badge-mono">
+<span class="flex items-center gap-1.5 text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+              ROGUE AI PROBE: INTERCEPTING
+            </span>
+<span class="text-on-surface-variant">|</span>
+<span class="text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+              WASM VEIL: ENGAGED
+            </span>
+</div>
+</div>
+<!-- Split Dynamic Simulation Arena -->
+<div class="relative grid grid-cols-1 md:grid-cols-12 gap-space-md my-auto py-space-lg items-center z-10">
+<!-- LEFT: Attack Vectors (Deep Crimson Glow) -->
+<div class="md:col-span-5 flex flex-col gap-space-sm relative">
+<div class="absolute -inset-4 bg-secondary-container/15 rounded-xl blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-mono text-label-mono uppercase tracking-wider font-semibold">Inbound Rogue Probes</span>
+<span class="font-badge-mono text-badge-mono px-2 py-0.5 rounded bg-secondary-container/40 text-on-secondary-container">THREAT VECTORS</span>
+</div>
+<div class="space-y-space-xs relative z-10">
+<div class="p-space-sm rounded bg-surface-container-high/90 shadow-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">bug_report</span>
+<span class="font-label-mono text-label-mono text-on-surface font-mono">DOM.PromptInjection_v9</span>
+</div>
+<span class="font-badge-mono text-badge-mono text-secondary px-1.5 py-0.5 rounded bg-surface-container-lowest">BLOCKED</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-high/90 shadow-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">key</span>
+<span class="font-label-mono text-label-mono text-on-surface font-mono">OpenAI_API_Key_Harvesting</span>
+</div>
+<span class="font-badge-mono text-badge-mono text-secondary px-1.5 py-0.5 rounded bg-surface-container-lowest">STRIPPED</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-high/90 shadow-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">fingerprint</span>
+<span class="font-label-mono text-label-mono text-on-surface font-mono">Browser_Canvas_Fingerprint</span>
+</div>
+<span class="font-badge-mono text-badge-mono text-secondary px-1.5 py-0.5 rounded bg-surface-container-lowest">NULLIFIED</span>
+</div>
+</div>
+</div>
+<!-- CENTER: Golden Barrier Kinetic Core -->
+<div class="md:col-span-2 flex flex-col items-center justify-center py-space-sm">
+<div class="relative flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-primary/20 animate-ping absolute"></div>
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-[0_0_30px_rgba(222,169,60,0.6)] z-10">
+<span class="material-symbols-outlined text-[28px]">shield</span>
+</div>
+</div>
+<div class="mt-space-sm text-center">
+<span class="font-badge-mono text-badge-mono text-primary tracking-widest block uppercase">DEVIATION 0%</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant text-[10px]">Zero Leak Tunnel</span>
+</div>
+</div>
+<!-- RIGHT: Sanitized Golden AI Egress Pipeline -->
+<div class="md:col-span-5 flex flex-col gap-space-sm relative">
+<div class="absolute -inset-4 bg-primary/10 rounded-xl blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between text-primary">
+<span class="font-label-mono text-label-mono uppercase tracking-wider font-semibold">Guarded Egress Stream</span>
+<span class="font-badge-mono text-badge-mono px-2 py-0.5 rounded bg-primary-container/20 text-primary">SECURE CLOUD FEED</span>
+</div>
+<div class="space-y-space-xs relative z-10 font-mono text-[11px]">
+<div class="p-space-sm rounded bg-surface-container-high/90 shadow-md text-on-surface flex items-center justify-between">
+<div class="flex items-center gap-space-sm truncate">
+<span class="text-primary font-bold">POST /v1/chat</span>
+<span class="text-on-surface-variant truncate">tokens: [SYNTH_NONCE_0912]</span>
+</div>
+<span class="font-badge-mono text-badge-mono text-primary px-1.5 py-0.5 rounded bg-surface-container-lowest">VERIFIED</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-high/90 shadow-md text-on-surface flex items-center justify-between">
+<div class="flex items-center gap-space-sm truncate">
+<span class="text-primary font-bold">TLS-1.3</span>
+<span class="text-on-surface-variant truncate">payload_sha: e9b1c78...</span>
+</div>
+<span class="font-badge-mono text-badge-mono text-primary px-1.5 py-0.5 rounded bg-surface-container-lowest">0.2ms</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-high/90 shadow-md text-on-surface flex items-center justify-between">
+<div class="flex items-center gap-space-sm truncate">
+<span class="text-primary font-bold">Context Preservation</span>
+<span class="text-on-surface-variant truncate">semantic_delta: 0.00%</span>
+</div>
+<span class="font-badge-mono text-badge-mono text-primary px-1.5 py-0.5 rounded bg-surface-container-lowest">OPTIMAL</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Visualizer Footer Stats Bar -->
+<div class="pt-space-md flex flex-wrap items-center justify-between gap-space-sm text-on-surface-variant font-label-mono text-label-mono relative z-10">
+<div class="flex items-center gap-space-md">
+<span>Buffer: <strong class="text-on-surface">Volatile RAM Only</strong></span>
+<span>Leakage Probability: <strong class="text-primary">0.00000%</strong></span>
+</div>
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>Cryptographically Bound to Active Tab</span>
+</div>
+</div>
+</div>
+<!-- Action Cluster: Primary CTA & Demo Exploration -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center justify-center gap-space-sm px-space-xl py- space-md py-3.5 rounded bg-gradient-to-r from-primary via-primary-container to-primary text-on-primary-container font-headline-md text-title-lg font-bold shadow-[0_0_24px_rgba(222,169,60,0.35)] hover:shadow-[0_0_36px_rgba(222,169,60,0.55)] transition-all transform hover:-translate-y-0.5" href="#interactive-demo">
+<span class="material-symbols-outlined text-[20px]">extension</span>
+          Deploy Local Proxy (Chrome / Brave)
+        </a>
+<a class="inline-flex items-center justify-center gap-space-sm px-space-lg py-3.5 rounded bg-surface-container-high text-on-surface font-title-lg text-title-lg font-medium shadow-md hover:bg-surface-container-highest hover:text-primary transition-all" href="#interactive-demo">
+<span class="material-symbols-outlined text-[20px] text-primary">terminal</span>
+          Explore Redaction Playground
+        </a>
+<div class="flex items-center gap-space-sm pl-space-md">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-xs shadow-inner">ZK</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-bold text-xs shadow-inner">WA</div>
+<div class="w-8 h-8 rounded-full bg-surface-container text-on-surface flex items-center justify-center font-bold text-xs shadow-inner">256</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Over 1.8M tokens shielded today</span>
+</div>
+</div>
+<!-- Security Assurance Certification Strip -->
+<div class="pt-space-md grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="p-space-md rounded bg-surface-container-low shadow-sm flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">enhanced_encryption</span>
+<div>
+<div class="font-title-lg text-body-md font-bold text-on-surface">Zero-Knowledge Enclaves</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">No keys or prompts stored</div>
+</div>
+</div>
+<div class="p-space-md rounded bg-surface-container-low shadow-sm flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">verified</span>
+<div>
+<div class="font-title-lg text-body-md font-bold text-on-surface">SOC-2 Type II Certified</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Independent security audit</div>
+</div>
+</div>
+<div class="p-space-md rounded bg-surface-container-low shadow-sm flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">memory</span>
+<div>
+<div class="font-title-lg text-body-md font-bold text-on-surface">Local WASM Engine</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Hardware-accelerated NER</div>
+</div>
+</div>
+<div class="p-space-md rounded bg-surface-container-low shadow-sm flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">lock_reset</span>
+<div>
+<div class="font-title-lg text-body-md font-bold text-on-surface">AES-GCM 256 Ephemeral</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Per-tab key destruction</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= INTERACTIVE BEFORE/AFTER DEMO SECTION ================= -->
+<section class="relative w-full px-margin py-space-xl bg-surface-container-lowest" id="interactive-demo">
+<div class="max-w-7xl mx-auto space-y-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-xs max-w-2xl">
+<div class="font-badge-mono text-badge-mono text-primary uppercase tracking-widest">
+            Deterministic Token Sanitization
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            Before &amp; After: The Cryptographic Transmutation
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            PrivacyLens sits in the browser DOM pipeline. Watch raw enterprise credentials and customer records translate into deterministic cryptographic nonces before the outbound fetch packet is signed.
+          </p>
+</div>
+<!-- Mode Toggle Indicator -->
+<div class="flex items-center gap-space-xs bg-surface-container p-1 rounded">
+<button class="px-space-md py-1 rounded bg-primary-container text-on-primary-container font-title-lg text-body-md font-semibold transition-all" id="view-side-btn">
+            Side-by-Side View
+          </button>
+<button class="px-space-md py-1 rounded text-on-surface-variant hover:text-on-surface font-title-lg text-body-md font-semibold transition-all" id="view-toggle-btn">
+            Comparative Split
+          </button>
+</div>
+</div>
+<!-- Real-Time Interactive Sentence Redaction Simulator -->
+<div class="p-space-lg rounded-xl bg-surface-container-high shadow-2xl space-y-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">smart_toy</span>
+<span class="font-title-lg text-title-lg text-on-surface font-semibold">Interactive Sandbox Redactor</span>
+</div>
+<span class="font-badge-mono text-badge-mono text-primary uppercase px-2 py-0.5 rounded bg-surface-container">
+            Client WASM Regex + Micro-NER Active
+          </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- User Prompt Input -->
+<div class="space-y-space-xs">
+<label class="font-label-mono text-label-mono text-on-surface-variant uppercase flex items-center justify-between" for="prompt-input">
+<span>Your Prompt Injection Simulation:</span>
+<span class="text-secondary font-mono text-[10px]">RAW (UNSAFE)</span>
+</label>
+<textarea class="w-full bg-surface-container-lowest text-on-surface font-label-mono text-body-md p-space-md rounded outline-none shadow-inner focus:shadow-[0_0_12px_rgba(222,169,60,0.3)] transition-all resize-none" id="prompt-input" placeholder="Type sensitive data here, e.g. Customer Elena Rostova paid with card 4111 2222 3333 4444 and OTP 892-104." rows="3">Customer Elena Rostova requested refund for SSN ABCPK1290K with card 4532 9812 4432 1099 and auth OTP 892-104 regarding diagnosis code DX-90812.</textarea>
+</div>
+<!-- Real-Time Sanitized Result -->
+<div class="space-y-space-xs">
+<div class="font-label-mono text-label-mono text-primary uppercase flex items-center justify-between">
+<span>Sanitized LLM Wire Payload:</span>
+<span class="font-mono text-[10px] text-primary">SECURE OUTPUT</span>
+</div>
+<div class="w-full h-[98px] bg-surface-container-lowest font-label-mono text-body-md p-space-md rounded overflow-y-auto leading-relaxed shadow-inner" id="sanitized-preview">
+<!-- Dynamically Populated by script -->
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs font-label-mono text-body-sm text-on-surface-variant">
+<span>Quick Inject Presets:</span>
+<button class="preset-btn px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-highest text-on-surface transition-all text-xs" data-text="Elena Rostova SSN ABCPK1290K card 4532 9812 4432 1099 with OTP 892-104">
+            Financial + PII Identity
+          </button>
+<button class="preset-btn px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-highest text-on-surface transition-all text-xs" data-text="Patient John Doe diagnosed with chronic hypertension DX-90812 on card 5422 1200 9988 3311">
+            HIPAA Medical Profile
+          </button>
+<button class="preset-btn px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-highest text-on-surface transition-all text-xs" data-text="Server root admin credentials key sk-live-99014a92f00a with auth token 991-230">
+            Cloud Secret Keys
+          </button>
+</div>
+</div>
+<!-- Twin Comparative Panels: Raw Payload vs Sanitized Stream -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter" id="compare-container">
+<!-- PANEL LEFT: Raw Intercepted Payload (Unprotected) -->
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col justify-between space-y-space-md relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary-container/20 rounded-bl-full pointer-events-none"></div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-title-lg text-title-lg font-bold text-on-surface">Raw Intercepted Payload</span>
+</div>
+<span class="font-badge-mono text-badge-mono uppercase px-2 py-0.5 rounded bg-secondary-container/40 text-on-secondary-container">
+              HIGH RISK · 5 LEAKS
+            </span>
+</div>
+<!-- Mock UI: Raw E-Commerce Checkout / Support Chat Context -->
+<div class="bg-surface-container-lowest p-space-md rounded space-y-space-md shadow-inner">
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono">
+<span>ENDPOINT: api.openai.com/v1/chat</span>
+<span class="text-secondary font-semibold">PLAINTEXT LEAK DETECTED</span>
+</div>
+<!-- Customer Chat Bubble with highlighted danger rings -->
+<div class="p-space-md rounded bg-surface-container text-on-surface font-body-md text-body-md space-y-space-sm leading-relaxed">
+<div class="font-label-mono text-badge-mono text-on-surface-variant">CLIENT SUPPORT TRANSCRIPT [USER_SESSION_819]:</div>
+<p>
+                "Hello support, I need to verify my billing for customer 
+                <span class="px-1.5 py-0.5 rounded bg-secondary-container/50 text-on-secondary-container font-mono shadow-[0_0_8px_rgba(147,0,10,0.8)] font-semibold">
+                  Elena Rostova
+                </span>. 
+                My recorded primary card on file is 
+                <span class="px-1.5 py-0.5 rounded bg-secondary-container/50 text-on-secondary-container font-mono shadow-[0_0_8px_rgba(147,0,10,0.8)] font-semibold">
+                  4532 •••• 9812 4432
+                </span>, 
+                verification two-factor code was 
+                <span class="px-1.5 py-0.5 rounded bg-secondary-container/50 text-on-secondary-container font-mono shadow-[0_0_8px_rgba(147,0,10,0.8)] font-semibold">
+                  892-104
+                </span>, 
+                and my tax identification registration is 
+                <span class="px-1.5 py-0.5 rounded bg-secondary-container/50 text-on-secondary-container font-mono shadow-[0_0_8px_rgba(147,0,10,0.8)] font-semibold">
+                  ABCPK1290K
+                </span>. 
+                Please expedite inquiry under prescription dossier 
+                <span class="px-1.5 py-0.5 rounded bg-secondary-container/50 text-on-secondary-container font-mono shadow-[0_0_8px_rgba(147,0,10,0.8)] font-semibold">
+                  DX-90812 (Cardiovascular)
+                </span>."
+              </p>
+</div>
+<!-- Danger Analytics Feed -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs font-label-mono text-body-sm">
+<div class="p-space-sm rounded bg-surface-container-high flex flex-col gap-0.5">
+<span class="text-on-surface-variant">PCI-DSS Exposure</span>
+<span class="text-secondary font-bold">CRITICAL VIOLATION</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-high flex flex-col gap-0.5">
+<span class="text-on-surface-variant">HIPAA Entity Check</span>
+<span class="text-secondary font-bold">PHI INTERCEPTED</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono pt-space-sm">
+<span>LLM Training Retention: <span class="text-secondary">ENABLED BY DEFAULT</span></span>
+<span>Target Cloud: OpenAI / Anthropic</span>
+</div>
+</div>
+<!-- PANEL RIGHT: PrivacyLens Sanitized Stream (Protected) -->
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col justify-between space-y-space-md relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-bl-full pointer-events-none"></div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-primary animate-ping"></span>
+<span class="font-title-lg text-title-lg font-bold text-on-surface">PrivacyLens Sanitized Stream</span>
+</div>
+<span class="font-badge-mono text-badge-mono uppercase px-2 py-0.5 rounded bg-primary/20 text-primary">
+              100% SANITIZED · 0 LEAKS
+            </span>
+</div>
+<!-- Mock UI: Sanitized Golden Nonce Pill Replacements -->
+<div class="bg-surface-container-lowest p-space-md rounded space-y-space-md shadow-inner">
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono">
+<span>ENDPOINT: api.openai.com/v1/chat</span>
+<span class="text-primary font-semibold">SYNTHETIC NONCES APPLIED</span>
+</div>
+<!-- Customer Chat Bubble with Golden Glowing Badge Pills -->
+<div class="p-space-md rounded bg-surface-container text-on-surface font-body-md text-body-md space-y-space-sm leading-relaxed">
+<div class="font-label-mono text-badge-mono text-primary">PROXY TRANSFORMED STREAM [WASM_SESSION_VALID]:</div>
+<p>
+                "Hello support, I need to verify my billing for customer 
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-mono text-xs font-bold shadow-[0_0_12px_rgba(222,169,60,0.5)]">
+                  [REDACTED: USER_IDENTITY_NONCE_7A]
+                </span>. 
+                My recorded primary card on file is 
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-mono text-xs font-bold shadow-[0_0_12px_rgba(222,169,60,0.5)]">
+                  [REDACTED: CARD_VISA_TOKEN]
+                </span>, 
+                verification two-factor code was 
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-mono text-xs font-bold shadow-[0_0_12px_rgba(222,169,60,0.5)]">
+                  [REDACTED: OTP_AUTH]
+                </span>, 
+                and my tax identification registration is 
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-mono text-xs font-bold shadow-[0_0_12px_rgba(222,169,60,0.5)]">
+                  [REDACTED: GOV_ID_HASH]
+                </span>. 
+                Please expedite inquiry under prescription dossier 
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-mono text-xs font-bold shadow-[0_0_12px_rgba(222,169,60,0.5)]">
+                  [REDACTED: HEALTH_ENTITY]
+                </span>."
+              </p>
+</div>
+<!-- Golden Analytics Success Feed -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs font-label-mono text-body-sm">
+<div class="p-space-sm rounded bg-surface-container-high flex flex-col gap-0.5">
+<span class="text-on-surface-variant">Preservation Score</span>
+<span class="text-primary font-bold">100% INTENT RETAINED</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-high flex flex-col gap-0.5">
+<span class="text-on-surface-variant">Ephemeral WASM Hash</span>
+<span class="text-primary font-bold">ZERO-TRACE DESTROY</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono pt-space-sm">
+<span>Re-hydration on Egress: <span class="text-primary">SEAMLESS CLIENT UNPACK</span></span>
+<span>Total Processing Lag: <span class="text-primary font-bold">0.38 ms</span></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= THE ARCHITECTURE BENTO GRID ================= -->
+<section class="relative w-full px-margin py-space-xl bg-background">
+<div class="max-w-7xl mx-auto space-y-space-xl">
+<!-- Section Header with Editorial Metadata -->
+<div class="space-y-space-xs max-w-3xl">
+<div class="flex items-center gap-space-sm font-badge-mono text-badge-mono text-primary uppercase tracking-widest">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+          Autonomous Edge Execution Framework
+        </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Bento Architecture: Client-Side Fortress
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Engineered as a zero-latency WebAssembly sandbox. Memory pages are scrubbed upon completion, ensuring even local process dumps yield zero recoverable cryptographic plaintexts.
+        </p>
+</div>
+<!-- Bento Cards Grid (4 Flagship Modules) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- CARD 1: Local Interceptor (Spans 7 cols on Desktop) -->
+<div class="md:col-span-7 group relative rounded-xl bg-surface-container-low p-space-lg shadow-xl hover:shadow-[0_0_30px_rgba(222,169,60,0.15)] transition-all flex flex-col justify-between overflow-hidden">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded bg-primary-container text-on-primary-container flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[22px]">electrical_services</span>
+</div>
+<span class="font-badge-mono text-badge-mono text-primary px-2 py-0.5 rounded bg-surface-container">MOD_01 // HOOK</span>
+</div>
+<div class="space-y-space-xs">
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface group-hover:text-primary transition-colors">
+                Local Interceptor &amp; DOM Trap
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Intercepts dynamic DOM mutation trees, clipboard operations, and outbound JSON <code class="text-primary font-mono font-semibold">fetch()</code> streams microseconds before the TCP socket handoff.
+              </p>
+</div>
+<!-- Mini Code Snippet Inspection Preview -->
+<div class="p-space-sm rounded bg-surface-container-lowest font-label-mono text-body-sm text-on-surface space-y-1 shadow-inner">
+<div class="text-on-surface-variant flex justify-between">
+<span>// wasm_stream_hook.rs</span>
+<span class="text-primary">HOT-SWAP READY</span>
+</div>
+<p class="text-primary">pub unsafe fn trap_outbound_tokens(buf: &amp;mut [u8]) -&gt; Result&lt;SanitizedStream, TrapErr&gt; {</p>
+<p class="pl-4 text-on-surface-variant">let ast = DomObserver::harvest_active_context();</p>
+<p class="pl-4 text-on-surface-variant">wasm_ner::evaluate_entropy_density(&amp;ast)?;</p>
+<p class="pl-4 text-on-surface">MemoryMap::scrub_ephemeral_heap(ast.nonces());</p>
+<p class="text-primary">}</p>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono pt-space-md">
+<span>Hook Target: <strong class="text-on-surface">Window.fetch &amp; WebSocket</strong></span>
+<span>Overhead: <strong class="text-primary">&lt; 0.12ms</strong></span>
+</div>
+</div>
+<!-- CARD 2: Detection Engine (Spans 5 cols on Desktop) -->
+<div class="md:col-span-5 group relative rounded-xl bg-surface-container-low p-space-lg shadow-xl hover:shadow-[0_0_30px_rgba(222,169,60,0.15)] transition-all flex flex-col justify-between overflow-hidden">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded bg-primary-container text-on-primary-container flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[22px]">memory</span>
+</div>
+<span class="font-badge-mono text-badge-mono text-primary px-2 py-0.5 rounded bg-surface-container">MOD_02 // NER_WASM</span>
+</div>
+<div class="space-y-space-xs">
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface group-hover:text-primary transition-colors">
+                Detection Engine: Local NER
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Regex matching paired with a quantized 4-bit Named Entity Recognition (NER) pipeline executing inside client WebAssembly. Zero data ever touches an external API.
+              </p>
+</div>
+<!-- Visualizer: Entropy Density Bar Meter -->
+<div class="bg-surface-container-lowest p-space-md rounded space-y-space-xs shadow-inner">
+<div class="flex justify-between font-label-mono text-label-mono text-on-surface-variant">
+<span>Shannon Entropy Analysis:</span>
+<span class="text-primary font-bold">HIGH CONFIDENCE</span>
+</div>
+<div class="flex gap-1 h-3">
+<div class="flex-1 bg-primary rounded-sm shadow-[0_0_8px_rgba(222,169,60,0.5)]"></div>
+<div class="flex-1 bg-primary rounded-sm shadow-[0_0_8px_rgba(222,169,60,0.5)]"></div>
+<div class="flex-1 bg-primary rounded-sm shadow-[0_0_8px_rgba(222,169,60,0.5)]"></div>
+<div class="flex-1 bg-primary rounded-sm shadow-[0_0_8px_rgba(222,169,60,0.5)]"></div>
+<div class="flex-1 bg-surface-container-high rounded-sm"></div>
+<div class="flex-1 bg-surface-container-high rounded-sm"></div>
+</div>
+<span class="font-badge-mono text-[10px] text-on-surface-variant block pt-1">Model Size: 1.8MB (Compiled to AVX2 SIMD)</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono pt-space-md">
+<span>Accuracy: <strong class="text-on-surface">99.98% PII Recall</strong></span>
+<span>External Requests: <strong class="text-primary">0 (Airgapped)</strong></span>
+</div>
+</div>
+<!-- CARD 3: HTML Sanitizer (Spans 5 cols on Desktop) -->
+<div class="md:col-span-5 group relative rounded-xl bg-surface-container-low p-space-lg shadow-xl hover:shadow-[0_0_30px_rgba(222,169,60,0.15)] transition-all flex flex-col justify-between overflow-hidden">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded bg-primary-container text-on-primary-container flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[22px]">swap_horiz</span>
+</div>
+<span class="font-badge-mono text-badge-mono text-primary px-2 py-0.5 rounded bg-surface-container">MOD_03 // NONCE_MAP</span>
+</div>
+<div class="space-y-space-xs">
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface group-hover:text-primary transition-colors">
+                Semantic Nonce Re-Hydrator
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Replaces sensitive nodes with synthetic cryptographic nonces while maintaining exact syntactic context for the LLM. Automatically maps responses back to original values in user view.
+              </p>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-center justify-between font-label-mono text-body-sm shadow-inner">
+<span class="text-on-surface-variant">Map: "4532...4432"</span>
+<span class="material-symbols-outlined text-primary text-[18px]">double_arrow</span>
+<span class="text-primary font-bold">[CARD_TOKEN_9A]</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono pt-space-md">
+<span>LLM Semantic Loss: <strong class="text-primary">0.00%</strong></span>
+<span>Re-hydration: <strong class="text-on-surface">Client Memory Only</strong></span>
+</div>
+</div>
+<!-- CARD 4: Outbound Guardrail (Spans 7 cols on Desktop) -->
+<div class="md:col-span-7 group relative rounded-xl bg-surface-container-low p-space-lg shadow-xl hover:shadow-[0_0_30px_rgba(222,169,60,0.15)] transition-all flex flex-col justify-between overflow-hidden">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[22px]">fitbit_jumping_jacks</span>
+</div>
+<span class="font-badge-mono text-badge-mono text-secondary px-2 py-0.5 rounded bg-surface-container">MOD_04 // GUARDRAIL</span>
+</div>
+<div class="space-y-space-xs">
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface group-hover:text-primary transition-colors">
+                Outbound Prompt Injection Guardrail
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Blocks adversarial prompt injections, jailbreaks, hidden markdown image beacons, and invisible font canary exfiltration tactics before they trigger downstream LLM safety locks.
+              </p>
+</div>
+<!-- Defensive Feed Checklist -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm font-label-mono text-body-sm">
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Canary Token Traps Blocked</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Invisible Unicode Stripped</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Indirect Jailbreaks Defused</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>SSR &amp; Exfiltration Disarmed</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono pt-space-md">
+<span>Threat Taxonomy: <strong class="text-on-surface">OWASP Top 10 LLM</strong></span>
+<span>Action: <strong class="text-secondary">Instant Autonomous Sever</strong></span>
+</div>
+</div>
+</div>
+<!-- Glowing Stats Ribbon Banner -->
+<div class="rounded-xl bg-gradient-to-r from-surface-container-high via-surface-container-highest to-surface-container-high p-space-lg shadow-2xl">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg items-center text-center">
+<div class="space-y-space-xs">
+<div class="font-display-xl text-headline-lg font-bold text-primary">0.4ms</div>
+<div class="font-label-mono text-label-mono text-on-surface font-semibold uppercase">Latency Overhead</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Imperceptible browsing delay, 12x faster than network ping</p>
+</div>
+<div class="space-y-space-xs border-y md:border-y-0 md:border-x border-outline-variant/30 py-space-md md:py-0">
+<div class="font-display-xl text-headline-lg font-bold text-primary">100%</div>
+<div class="font-label-mono text-label-mono text-on-surface font-semibold uppercase">Client WASM Execution</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Runs on local device hardware without telemetry reporting</p>
+</div>
+<div class="space-y-space-xs">
+<div class="font-display-xl text-headline-lg font-bold text-primary">0 Bytes</div>
+<div class="font-label-mono text-label-mono text-on-surface font-semibold uppercase">Sent Unencrypted</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mathematical guarantee enforced by zero-knowledge architecture</p>
+</div>
+</div>
+</div>
+<!-- Deployment Call to Action Strip -->
+<div class="p-space-xl rounded-xl bg-surface-container-low shadow-2xl flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="space-y-space-xs">
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">
+            Shield your browser in under 60 seconds
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Download the open-source unpacked extension or deploy system-wide via enterprise PKI certificate across Chromium, Brave, and Edge.
+          </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-md">
+<button class="px-space-xl py-3 rounded bg-primary text-on-primary font-headline-md text-title-lg font-bold shadow-[0_0_24px_rgba(222,169,60,0.4)] hover:bg-primary-fixed transition-all">
+            Get Chrome Extension
+          </button>
+<button class="px-space-lg py-3 rounded bg-surface-container-high text-on-surface hover:text-primary font-title-lg text-title-lg font-medium shadow-md transition-all">
+            Inspect Source Code
+          </button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Inline Interactive Script for Live Redaction Simulator and Deflection Increment -->
+<script>
+  (function() {
+    const input = document.getElementById('prompt-input');
+    const preview = document.getElementById('sanitized-preview');
+    const counter = document.getElementById('hero-deflect-counter');
+    const presetBtns = document.querySelectorAll('.preset-btn');
+
+    // Simple client-side token sanitizer simulation
+    function sanitize(text) {
+      if (!text) return '';
+      let out = text;
+      
+      // Card numbers
+      out = out.replace(/\b(?:\d[ -]*?){13,16}\b/g, '<span class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-mono text-xs font-bold shadow-[0_0_8px_rgba(222,169,60,0.4)]">[REDACTED: CARD_VISA_TOKEN]</span>');
+      
+      // Full names
+      out = out.replace(/(Elena Rostova|John Doe|Jane Smith)/gi, '<span class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-mono text-xs font-bold shadow-[0_0_8px_rgba(222,169,60,0.4)]">[REDACTED: USER_IDENTITY_NONCE]</span>');
+      
+      // OTPs
+      out = out.replace(/\b\d{3}[- ]?\d{3}\b/g, '<span class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-mono text-xs font-bold shadow-[0_0_8px_rgba(222,169,60,0.4)]">[REDACTED: OTP_AUTH]</span>');
+      
+      // SSN / Gov IDs
+      out = out.replace(/\b[A-Z]{5}[0-9]{4}[A-Z]{1}\b/gi, '<span class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-mono text-xs font-bold shadow-[0_0_8px_rgba(222,169,60,0.4)]">[REDACTED: GOV_ID_HASH]</span>');
+      
+      // Medical codes
+      out = out.replace(/\bDX-\d{5}\b/gi, '<span class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-mono text-xs font-bold shadow-[0_0_8px_rgba(222,169,60,0.4)]">[REDACTED: HEALTH_ENTITY]</span>');
+
+      // API keys
+      out = out.replace(/sk-[a-zA-Z0-9-]{12,}/gi, '<span class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-mono text-xs font-bold shadow-[0_0_8px_rgba(222,169,60,0.4)]">[REDACTED: API_KEY_SECRET]</span>');
+
+      return out;
+    }
+
+    function update() {
+      if (input && preview) {
+        preview.innerHTML = sanitize(input.value);
+      }
+    }
+
+    if (input) {
+      input.addEventListener('input', update);
+      update();
+    }
+
+    presetBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (input) {
+          input.value = btn.getAttribute('data-text');
+          update();
+        }
+      });
+    });
+
+    // Ambient Deflection Counter Simulation
+    let count = 34291;
+    setInterval(() => {
+      count += Math.floor(Math.random() * 3) + 1;
+      if (counter) {
+        counter.textContent = count.toLocaleString();
+      }
+    }, 2800);
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest py-space-xl relative z-20 shadow-[0_-8px_32px_-4px_rgba(0,0,0,0.8)]"><div class="w-full px-margin"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl"><div class="space-y-space-sm"><div class="flex items-center gap-space-sm"><img alt="PrivacyLens Shield Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WLN14B6fPoVlPUzBN7Rm_TuI2nud5gcDqBY2il6aGOf2fK93oR8ytwLE4OvTR5ZlGph_tiJJL79QDJKU0ScwoCPJh9wbRmEKQb0niV7CCCKtGb9Iwyz4AwR79-BYGAyon-gtok-zDaTKi2CSslVjuvd8dIUAeqGF7rmyOXugdZkT0Tijm0tMrL_6kMpK7c2Nc6xPfstmvCqwJId0sTF7ORYIyGeQD___88PAvaobhbzA"/><span class="font-title-lg text-title-lg text-on-surface">PrivacyLens</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Zero-Knowledge autonomous browser proxy safeguarding enterprise and private intelligence from generative model leakage.</p><div class="flex items-center gap-space-xs pt-space-xs"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-mono text-label-mono text-on-surface-variant">Zero Data Retention Enforced</span></div></div><div class="space-y-space-xs"><h4 class="font-title-lg text-title-lg text-on-surface mb-space-sm">Platform</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface transition-colors cursor-pointer">AI Tunnel Visualizer</li><li class="hover:text-on-surface transition-colors cursor-pointer">PII Strip Telemetry</li><li class="hover:text-on-surface transition-colors cursor-pointer">Prompt Obfuscator</li><li class="hover:text-on-surface transition-colors cursor-pointer">Zero-Trace Auditing</li></ul></div><div class="space-y-space-xs"><h4 class="font-title-lg text-title-lg text-on-surface mb-space-sm">Resources</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface transition-colors cursor-pointer">SDK &amp; API Reference</li><li class="hover:text-on-surface transition-colors cursor-pointer">Whitepaper Architecture</li><li class="hover:text-on-surface transition-colors cursor-pointer">Security Incident Response</li><li class="hover:text-on-surface transition-colors cursor-pointer">Threat Vector Index</li></ul></div><div class="space-y-space-sm"><h4 class="font-title-lg text-title-lg text-on-surface mb-space-sm">Compliance Status</h4><div class="flex flex-wrap gap-space-xs"><span class="font-badge-mono text-badge-mono px-space-xs py-1 rounded bg-surface-container-high text-primary tracking-wider">SOC2 TYPE II</span><span class="font-badge-mono text-badge-mono px-space-xs py-1 rounded bg-surface-container-high text-primary tracking-wider">HIPAA READY</span><span class="font-badge-mono text-badge-mono px-space-xs py-1 rounded bg-surface-container-high text-primary tracking-wider">ZERO-KNOWLEDGE</span></div><div class="bg-surface-container p-space-sm rounded space-y-space-xs"><div class="flex justify-between font-label-mono text-label-mono text-on-surface-variant"><span>Cluster Health</span><span class="text-primary">99.998% SLA</span></div><div class="flex justify-between font-label-mono text-label-mono text-on-surface-variant"><span>Payload Scrub</span><span>0.14ms avg</span></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 PrivacyLens Security Technologies. All rights reserved.</p><div class="flex items-center gap-space-lg"><span class="hover:text-on-surface cursor-pointer">Cryptographic Disclosures</span><span class="hover:text-on-surface cursor-pointer">Terms of Shielding</span><span class="hover:text-on-surface cursor-pointer">Security Node Status</span></div></div></div></footer></body></html>
